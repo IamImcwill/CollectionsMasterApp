@@ -14,11 +14,11 @@ namespace CollectionsMasterConsoleUI
             #region Arrays
             //TODO: Create an integer Array of size 50
             int[] array = new int[50];
-            NumberPrinter(array);
+           
 
             //TODO: Create a method to populate the number array with 50 random numbers that are between 0 and 50
             Populater(array);
-            NumberPrinter(array);
+           
 
             //TODO: Print the first number of the array
             Console.WriteLine($"First number of the array: {array[0]}");
@@ -55,7 +55,7 @@ namespace CollectionsMasterConsoleUI
             /*      Hint: Array.____()      */
             Array.Sort(array);
             Console.WriteLine("Sorted numbers:");
-            NumberPrinter(array);
+            
 
             Console.WriteLine("\n************End Arrays*************** \n");
             #endregion
@@ -120,21 +120,14 @@ namespace CollectionsMasterConsoleUI
 
             //TODO: Clear the list
             list.Clear();
-
-#/*endregion*/
-
-
-
-
-
         }
 
         private static void ThreeKiller(int[] numbers)
         {
-            for (int i = 0; i < numbers.Length; i++) ;
+            for (int i = 0; i < numbers.Length; i++) 
             {
-                int i = 0;
-                if (numbers[i] % 3 == 0);
+                
+                if (numbers[i] % 3 == 0)
                 {
                     numbers[i] = 0;
                 }
@@ -144,6 +137,7 @@ namespace CollectionsMasterConsoleUI
         private static void OddKiller(List<int> numberList)
         {
             numberList.RemoveAll(number => number % 2 != 0);
+
         }
 
         private static void NumberChecker(List<int> numberList, int searchNumber)
